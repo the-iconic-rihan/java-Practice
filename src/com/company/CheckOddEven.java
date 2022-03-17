@@ -6,9 +6,9 @@ import java.util.Scanner;
 public class CheckOddEven {
     static void oddEven(int num) {
         if (num % 2 == 0)
-            System.out.println("The Entered number is even");
+            System.out.print("The Entered number is even");
         else
-            System.out.println("The Entered number is odd");
+            System.out.print("The Entered number is odd");
     }
 
     public static void main(String[] args) {
