@@ -1,22 +1,25 @@
 package com.company;
 
+import java.sql.SQLOutput;
 import java.util.Arrays;
 
 public class sorting {
 
     public static void main(String[] args) {
         // write your code here
-        int[] arr = {54,-36, 2, 8, 6, 7, 3, 1};
+        int[] arr = {54, -36, 2, 8, 6, 7, 3, 1};
 //        descending  call
-        bubbleSort(arr);
+//        bubbleSort(arr);
 //        ascending  call
-        bubbleSortAsc(arr);
-
+//        bubbleSortAsc(arr);
+        selection(arr);
     }
 
     //    bubble sort: For ascending  order
     public static void bubbleSortAsc(int[] arr) {
         for (int i = 0; i < arr.length - 1; i++) {
+
+            System.out.println("length" + arr.length);
             for (int j = 0; j < arr.length - i - 1; j++) {
                 if (arr[j] > arr[j + 1]) {
                     int temp = arr[j];
@@ -41,7 +44,26 @@ public class sorting {
         }
         System.out.println(Arrays.toString(arr));
     }
-//time complexity = O(n^2) --> worst case scenario.
+
+    //time complexity = O(n^2) --> worst case scenario.
 //   O(N) --> array is sorted.
 //the algorithms which do not need any new array are also called as "in place sorting algorithms."
+
+    //    selection sort
+//    time complexity = O(N^2);
+    public static void selection(int[] arr) {
+        for (int i = 0; i < arr.length - 1; i++) {
+            int smallest = i;
+            for (int j = i + 1; j < arr.length; j++) {
+                if (arr[j] < arr[smallest]) {
+                    smallest = j;
+
+                }
+            }
+            int temp = arr[smallest];
+            arr[smallest] = arr[i];
+            arr[i] = temp;
+        }
+        System.out.println(Arrays.toString(arr));
+    }
 }
