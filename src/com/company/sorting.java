@@ -1,6 +1,5 @@
 package com.company;
 
-import java.sql.SQLOutput;
 import java.util.Arrays;
 
 public class sorting {
@@ -13,7 +12,7 @@ public class sorting {
 //        ascending  call
 //        bubbleSortAsc(arr);
 //        selection(arr);
-//        insertion(arr);
+        insertion(arr);
     }
 
     //    bubble sort: For ascending  order
@@ -79,8 +78,8 @@ public class sorting {
             }
 //            placement of elements
             arr[j + 1] = current;
+
         }
         System.out.println(Arrays.toString(arr));
-
     }
 }
