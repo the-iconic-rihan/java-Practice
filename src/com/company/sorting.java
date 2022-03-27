@@ -12,7 +12,8 @@ public class sorting {
 //        bubbleSort(arr);
 //        ascending  call
 //        bubbleSortAsc(arr);
-        selection(arr);
+//        selection(arr);
+//        insertion(arr);
     }
 
     //    bubble sort: For ascending  order
@@ -65,5 +66,21 @@ public class sorting {
             arr[i] = temp;
         }
         System.out.println(Arrays.toString(arr));
+    }
+
+    public static void insertion(int[] arr) {
+//        iterating over unsorted array.
+        for (int i = 1; i < arr.length; i++) {
+            int current = arr[i];
+            int j = i - 1;
+            while (j >= 0 && current < arr[j]) {
+                arr[j + 1] = arr[j];
+                j--;
+            }
+//            placement of elements
+            arr[j + 1] = current;
+        }
+        System.out.println(Arrays.toString(arr));
+
     }
 }
