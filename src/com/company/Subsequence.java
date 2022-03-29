@@ -17,7 +17,7 @@ public class Subsequence {
         if (idx == str.length()) {
             if (!set.contains(newString)) {
                 set.add(newString);
-                System.out.println(newString);
+                System.out.print(newString);
             }
             return;
         }
