@@ -3,7 +3,7 @@ package com.company;
 public class StringDuplicate {
 
     public static void SearchDuplicate(String str, int idx, String newString, boolean[] map) {
-        if (idx == map.length - 1) {
+        if (idx == str.length()) {
             System.out.println(newString);
             return;
         }
@@ -18,6 +18,7 @@ public class StringDuplicate {
         SearchDuplicate(str, idx + 1, newString, map);
 
     }
+
 
     public static void main(String[] args) {
         boolean[] map = new boolean[26];
