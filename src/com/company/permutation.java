@@ -1,6 +1,6 @@
 package com.company;
 
-public class permitation {
+public class permutation {
     public static void printPermutation(String str, String permutation) {
         if (str.length() == 0) {
             System.out.print(permutation + " ");
