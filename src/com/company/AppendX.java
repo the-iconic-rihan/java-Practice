@@ -8,8 +8,7 @@ public class AppendX {
             for (int i = 0; i < count; i++) {
                 newStrBuilder.append('x');
             }
-            newStr = newStrBuilder.toString();
-            System.out.println(newStr);
+            System.out.println(newStrBuilder);
             return;
         }
         char currElement = str.charAt(idx);

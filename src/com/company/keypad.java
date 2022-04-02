@@ -9,6 +9,7 @@ public class keypad {
         }
         char currElement = str.charAt(idx);
         String mapping = keymap[currElement - '0'];
+        System.out.println(mapping);
         for (int i = 0; i < mapping.length(); i++) {
             printCombo(str, idx + 1, keymap, combination + mapping.charAt(i));
         }
