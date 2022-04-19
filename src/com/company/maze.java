@@ -18,7 +18,7 @@ public class maze {
     }
 
     public static void main(String[] args) {
-        int n = 3, m = 3;
+        int n = 4, m = 4;
         System.out.println(countPath(0, 0, n, m));
     }
 }
