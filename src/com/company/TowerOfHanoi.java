@@ -1,5 +1,5 @@
 package com.company;
-
+//the problem of tower of hanoi
 public class TowerOfHanoi {
     public static void TowerOfHanoi1(int n, String src, String Hlper, String Dest) {
         if (n == 1) {
