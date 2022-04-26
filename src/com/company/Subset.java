@@ -14,7 +14,7 @@ public class Subset {
         subset.add(n);
         PrintSubset(n - 1, subset);
 
-//        choice --> not wanna come
+//        choice --> not want to come
 //        assuming the element added in subset is at last index and using it as index we remove the element
         subset.remove(subset.size() - 1);
         PrintSubset(n - 1, subset);
