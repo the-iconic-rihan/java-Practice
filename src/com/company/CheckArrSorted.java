@@ -1,5 +1,5 @@
 package com.company;
-
+//this program checks whether the given array is sorted or not.
 public class CheckArrSorted {
 
     public static boolean sorted(int[] arr, int idx) {
